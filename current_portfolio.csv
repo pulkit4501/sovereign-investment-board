@@ -1,0 +1,5 @@
+Ticker,Quantity,Average Price,Sector
+AAPL,10,150.00,Tech
+MSFT,5,300.00,Tech
+GOOGL,8,2500.00,Tech
+TSLA,15,700.00,Automotive
