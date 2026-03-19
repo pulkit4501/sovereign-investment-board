@@ -1,0 +1,28 @@
+# Ignore python compiled files
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Ignore environment variables
+.env
+.venv
+env/
+venv/
+
+# Ignore OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Ignore generated reports and charts
+*.pdf
+*.png
+
+# Ignore agent generated storage
+_agent/logs/
+_agent/brain/
