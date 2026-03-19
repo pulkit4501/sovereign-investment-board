@@ -1,10 +1,10 @@
-# Sovereign Investment Board 🕵️‍♂️💼
+# Sovereign Investment Board 
 
 An AI-driven agentic system designed for institutional-grade financial analysis. The system operates through a multi-agent debate and consensus mechanism, mirroring a high-stakes investment committee. Different specialized agents cross-examine each other to rigorously vet investment ideas, manage portfolio risk, and produce actionable research.
 
 // Kindly note that the solution PDF is being refined and the updates should be out soon
 
-## Usage: The Sovereign Investment Board 📱🕵️‍♂️
+## Usage: The Sovereign Investment Board 
 
 This repository is designed to be used in **AI-powered environments** (like Cursor, VS Code with Copilot, or specialized Agentic IDEs). 
 
@@ -24,7 +24,7 @@ For the `/portfolio` command to work, the Board needs to know what you own.
 
 ---
 
-## How It Works: Behind the Scenes ⚙️
+## How It Works: Behind the Scenes 
 
 -   **Agent Logic (`/_agent`):** The "Brains" of the system. Contains the persona rules and persona-driven workflows.
 -   **Execution Tools (`/scripts`):** The "Muscle" of the system. High-performance Python scripts that the agents call to:
