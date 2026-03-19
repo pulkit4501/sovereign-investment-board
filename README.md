@@ -2,54 +2,56 @@
 
 An AI-driven agentic system designed for institutional-grade financial analysis. The system operates through a multi-agent debate and consensus mechanism, mirroring a high-stakes investment committee. Different specialized agents cross-examine each other to rigorously vet investment ideas, manage portfolio risk, and produce actionable research.
 
-## Features
+## Usage: The Telegram-First Experience 📱
 
-- **Multi-Agent Debate:** Eight specialized agents act as an investment committee to vet ideas.
-- **Data-Driven Workflows:** Pulls financial, technical, and macro indicators to back up the narrative.
-- **Executive Summaries:** Generates concise PDF and JSON Research Packs.
-- **Telegram Integration:** Sends beautiful dashboards and alerts straight to your smartphone.
+The **Sovereign Investment Board** is an agentic system designed to be operated entirely through **Telegram**. Once your bot is configured, you interact with the Board members (AI Agents) using specific slash commands.
 
-## Installation & Setup
+### Primary Commands
 
-1. **Clone the repository**
-   ```bash
-   git clone https://github.com/your-username/sovereign-investment-board.git
-   cd sovereign-investment-board
-   ```
+1.  **/ticker <SYMBOL>**
+    *   **Action:** Triggers a "Deep Dive Audit" of a specific stock.
+    *   **Workflow:** The Engine pulls data, the Analyst reviews fundamentals, the Critic attacks the thesis, and the Chairman renders a final verdict.
+    *   **Output:** You receive a visual dashboard and an Executive Brief PDF directly in your Telegram chat.
 
-2. **Install requirements**
-   Ensure you have Python 3.9+ installed and required dependencies.
-   ```bash
-   pip install fpdf matplotlib requests
-   ```
+2.  **/portfolio**
+    *   **Action:** Initiates a line-by-line review of your current holdings.
+    *   **Workflow:** Risk audits, macro re-evaluations, and rebalancing recommendations.
 
-3. **Configure Environment Variables**
-   For the Telegram integration to work, create a `.env` file in the root folder or export the following variables in your terminal:
-   ```bash
-   export TELEGRAM_BOT_TOKEN="your_telegram_bot_token"
-   export TELEGRAM_CHAT_ID="your_telegram_chat_id"
-   ```
+3.  **/trendy**
+    *   **Action:** Commands the Hunter to scout for new, emerging investment themes and present them to the Board for debate.
 
-## Usage
+---
 
-The **Sovereign Investment Board** agents handle the complex data gathering, debating, and JSON payload generation automatically under the hood. 
+## How It Works: Behind the Scenes ⚙️
 
-Once the agents produce a final research JSON, they automatically trigger these helper scripts to generate output:
+This repository provides the **Brains** (Agent Rules & Workflows) and the **Tools** (Python Scripts) for your AI Assistant.
 
-**1. Generate an Executive Brief PDF:**
-```bash
-# The agents pass their formatted JSON string to generate a PDF.
-python scripts/generate_report.py '<agent_generated_json_data>' output.pdf
-```
+-   **Agent Logic (`/_agent`):** Contains the persona rules and step-by-step instructions that the AI follows to act as the "Sovereign Boardroom."
+-   **Execution Tools (`/scripts`):** These are the high-performance scripts the agents call to generate reports and send messages:
+    -   `generate_report.py`: Creates the professional Executive Brief PDF.
+    -   `visual_brief.py`: Generates the visual RSI/Valuation snapshot image.
+    -   `telegram_ping.py`: The secure bridge that pushes reports to your Telegram.
 
-**2. Send Alert to the Chairman:**
-```bash
-# Pushes the final PDF document securely to your Telegram.
-python scripts/telegram_ping.py output.pdf
-```
+## Setup & Configuration
 
-**3. Generate and Send a Visual Dashboard:**
-```bash
-# Creates a snapshot graphic of the stock and pushes it directly to Telegram.
-python scripts/visual_brief.py '<agent_generated_json_data>'
-```
+1.  **Clone & Install**
+    ```bash
+    git clone https://github.com/pulkit4501/sovereign-investment-board.git
+    cd sovereign-investment-board
+    pip install fpdf matplotlib requests
+    ```
+
+2.  **Configure Telegram**
+    Create a `.env` file or export these variables:
+    ```bash
+    export TELEGRAM_BOT_TOKEN="your_bot_token"
+    export TELEGRAM_CHAT_ID="your_chat_id"
+    ```
+
+3.  **Connect Your Agent**
+    Point your Agentic AI (e.g., GPT-4, Claude) to the rules in `/_agent/rules` and the workflows in `/_agent/workflows`. The agent will then recognize your Telegram commands and use the scripts in `/scripts` to respond.
+
+---
+
+## License
+[MIT License](LICENSE)
