@@ -48,6 +48,4 @@ For the `/portfolio` command to work, the Board needs to know what you own.
 
 ---
 
-## License
-[MIT License](LICENSE)
 
