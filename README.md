@@ -2,6 +2,8 @@
 
 An AI-driven agentic system designed for institutional-grade financial analysis. The system operates through a multi-agent debate and consensus mechanism, mirroring a high-stakes investment committee. Different specialized agents cross-examine each other to rigorously vet investment ideas, manage portfolio risk, and produce actionable research.
 
+// Kindly note that the solution PDF is being refined and the updates should be out soon
+
 ## Usage: The Sovereign Investment Board 📱🕵️‍♂️
 
 This repository is designed to be used in **AI-powered environments** (like Cursor, VS Code with Copilot, or specialized Agentic IDEs). 
